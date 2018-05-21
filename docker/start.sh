@@ -6,4 +6,4 @@
 # it saves you a LOT of resources avoiding full-desktops envs
 
 rm /tmp/.X0-lock &>/dev/null || true
-NODE_ENV='production' startx /usr/src/app/node_modules/.bin/electron /usr/src/app --enable-logging
+NODE_ENV='production' FRAMEBUFFER=/dev/fb1 startx /usr/src/app/node_modules/.bin/electron /usr/src/app --enable-logging
