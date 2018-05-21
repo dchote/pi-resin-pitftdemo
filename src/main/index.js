@@ -26,8 +26,11 @@ const electronConfig = {
   URL_LAUNCHER_TITLE: process.env.URL_LAUNCHER_TITLE || 'RESIN.IO',
   URL_LAUNCHER_URL: process.env.URL_LAUNCHER_URL || winURL,
   URL_LAUNCHER_ZOOM: parseFloat(process.env.URL_LAUNCHER_ZOOM || 1.0),
-  TFT: parseFloat(process.env.TFT || 1),
-  TFT_ROTATE: parseFloat(process.env.TFT || 0),
+  URL_LAUNCHER_OVERLAY_SCROLLBARS: process.env.URL_LAUNCHER_OVERLAY_SCROLLBARS === '1' ? 1 : 0,
+  ELECTRON_ENABLE_HW_ACCELERATION: process.env.ELECTRON_ENABLE_HW_ACCELERATION === '1',
+  ELECTRON_RESIN_UPDATE_LOCK: process.env.ELECTRON_RESIN_UPDATE_LOCK === '1',
+  ELECTRON_APP_DATA_DIR: process.env.ELECTRON_APP_DATA_DIR,
+  ELECTRON_USER_DATA_DIR: process.env.ELECTRON_USER_DATA_DIR
 }
 
 // enable touch events if your device supports them
