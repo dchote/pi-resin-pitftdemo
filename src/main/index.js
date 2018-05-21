@@ -62,7 +62,8 @@ function createWindow () {
     title: electronConfig.URL_LAUNCHER_TITLE,
     kiosk: !!(electronConfig.URL_LAUNCHER_KIOSK),
     webPreferences: {
-      zoomFactor: electronConfig.URL_LAUNCHER_ZOOM
+      zoomFactor: electronConfig.URL_LAUNCHER_ZOOM,
+      overlayScrollbars: !!(electronConfig.URL_LAUNCHER_OVERLAY_SCROLLBARS)
     },
     useContentSize: true
   })
