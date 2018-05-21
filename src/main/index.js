@@ -25,7 +25,9 @@ const electronConfig = {
   URL_LAUNCHER_HEIGHT: parseInt(process.env.URL_LAUNCHER_HEIGHT || 1080, 10),
   URL_LAUNCHER_TITLE: process.env.URL_LAUNCHER_TITLE || 'RESIN.IO',
   URL_LAUNCHER_URL: process.env.URL_LAUNCHER_URL || winURL,
-  URL_LAUNCHER_ZOOM: parseFloat(process.env.URL_LAUNCHER_ZOOM || 1.0)
+  URL_LAUNCHER_ZOOM: parseFloat(process.env.URL_LAUNCHER_ZOOM || 1.0),
+  TFT: parseFloat(process.env.TFT || 1),
+  TFT_ROTATE: parseFloat(process.env.TFT || 0),
 }
 
 // enable touch events if your device supports them
